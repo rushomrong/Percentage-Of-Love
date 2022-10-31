@@ -18,6 +18,21 @@ The Love Calculator provides a score from 0% to 100% that is meant to be an indi
 
 Note that like all other love calculators on the Internet, this calculator is intended for amusement only rather than as a real indication of love. Please follow your heart instead of the results of this calculator when considering love.
 
+## Screenshots
+
+<img src="https://play-lh.googleusercontent.com/AwXXjM0u6iGZ1QTrx5gUuOM2oTgPPH5ypJD2hHa3TQ1gyIrqAUloRaZolgiXcXSQSlI=w2560-h1440-rw" align="left"
+width="200" space="10" space="10">
+
+<img src="https://play-lh.googleusercontent.com/qz7wPRX9kxoUWJdf-hiP7iB7devqvJ0lIx8AGwE6Q1vDmr8qaq7zZhr0Zq6HIQ_9UkxB=w2560-h1440-rw" align="left"
+width="200" space="10" space="10">
+
+<img src="https://play-lh.googleusercontent.com/HwO0wemBjnalK8f9MNDKjzGpTYyQq4MzxNA7Y-50cvA-VZjXQeeiHA-zOoxPF3MWIpdu=w2560-h1440-rw" align="left"
+width="200" space="10" space="10">
+
+<img src="https://play-lh.googleusercontent.com/39WkYB3Kb-da_BK_T648woe4z29Tq71YcOJGbF215WRS2377zGaTmTPRHZ1LTHGPYXM=w2560-h1440-rw" align="center"
+width="200" hspace="10" vspace="10">
+<br></br>
+
 ## Features
 The android app lets you:
 - Calculate Love Percentage.
