@@ -1,7 +1,7 @@
 # Percentage-Of-Love
 It's an android entertainment app where you can check your and your partner's love percentage.
 
-<img src="/app/src/main/res/mipmap-hdpi/ic_launcher.png" align="left" width="200" hspace="10" vspace="10">
+<img src="/app/src/main/res/mipmap-hdpi/ic_launcher.png" align="left" width="100" hspace="10" vspace="10">
 
 Percentage Of Love is available on the Google Play Store.
 
