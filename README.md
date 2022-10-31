@@ -29,7 +29,7 @@ width="200" space="10" space="10">
 <img src="https://play-lh.googleusercontent.com/HwO0wemBjnalK8f9MNDKjzGpTYyQq4MzxNA7Y-50cvA-VZjXQeeiHA-zOoxPF3MWIpdu=w2560-h1440-rw" align="left"
 width="200" space="10" space="10">
 
-<img src="https://play-lh.googleusercontent.com/39WkYB3Kb-da_BK_T648woe4z29Tq71YcOJGbF215WRS2377zGaTmTPRHZ1LTHGPYXM=w2560-h1440-rw" align="center"
+<img src="https://play-lh.googleusercontent.com/39WkYB3Kb-da_BK_T648woe4z29Tq71YcOJGbF215WRS2377zGaTmTPRHZ1LTHGPYXM=w2560-h1440-rw" align="left"
 width="200" hspace="10" vspace="10">
 <br></br>
 
