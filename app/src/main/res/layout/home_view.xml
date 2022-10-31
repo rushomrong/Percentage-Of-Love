@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard.HomeView"
+    android:fitsSystemWindows="false"
+    android:id="@+id/drawar_layout"
+    android:background="@color/ButtonColor"
+    >
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/main_menu" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="?actionBarSize"
+                android:theme="?actionBarTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:navigationIcon="@drawable/menu"
+                app:tint="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="#00000000"
+                        android:layout_marginTop="15dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/luvcalculate"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginTop="10dp"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="25dp"
+                            android:padding="5dp"
+                            android:text="@string/Calculate"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="TextContrastCheck" />
+
+                        <Button
+                            android:onClick="OpenLuvCalculator"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#00000000"
+                            tools:ignore="OnClick,SpeakableTextPresentCheck,UsingOnClickInXml" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="#00000000"
+                        android:layout_marginTop="15dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/getsmsletter"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginTop="10dp"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="25dp"
+                            android:padding="5dp"
+                            android:text="@string/GetSMS"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="TextContrastCheck" />
+
+                        <Button
+                            android:onClick="openGetFreeSMS"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#00000000"
+                            tools:ignore="OnClick,SpeakableTextPresentCheck,UsingOnClickInXml" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="#00000000"
+                        android:layout_marginTop="15dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="30dp"
+                            android:background="@drawable/network"
+                            android:backgroundTint="@color/black"
+                            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="25dp"
+                            android:padding="5dp"
+                            android:text="@string/ShareApp"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="TextContrastCheck" />
+
+                        <Button
+                            android:onClick="ShareApp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#00000000"
+                            tools:ignore="OnClick,SpeakableTextPresentCheck,UsingOnClickInXml" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="#00000000"
+                        android:layout_marginTop="15dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="30dp"
+                            android:background="@drawable/review"
+                            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="25dp"
+                            android:padding="5dp"
+                            android:text="@string/RateApp"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="TextContrastCheck" />
+
+                        <Button
+                            android:id="@+id/btnRating"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#00000000"
+                            tools:ignore="OnClick,SpeakableTextPresentCheck,UsingOnClickInXml" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+
+                <!--IMG 1-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/round_bk5">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="25dp"
+                            android:text="@string/ThankU"
+                            android:textColor="@color/white"
+                            android:textSize="26sp" />
+
+
+                    </RelativeLayout>
+
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="160dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="-10dp"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/love2" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--Google Ads Layout-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/AdsUnit_HomeID" />
+
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

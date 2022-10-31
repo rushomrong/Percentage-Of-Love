@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/CircleColor"
+    android:fitsSystemWindows="false"
+    tools:context=".LoveConnection">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/backPressed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="TODO"
+                android:padding="15dp"
+                android:src="@drawable/back_arrow"
+                tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@+id/backPressed"
+                android:gravity="center_vertical"
+                android:text="@string/LuvNavTitle"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    tools:ignore="MissingConstraints">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/animationView"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="-25dp"
+                        android:gravity="start"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/lovefloat"
+                        tools:ignore="ImageContrastCheck" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/segoeui"
+                        android:text="@string/YourName"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/firstname"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/YourName"
+                        android:textColorHint="@color/black"
+                        app:boxStrokeColor="@color/black"
+                        app:boxStrokeWidthFocused="2dp"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/black"
+                        app:hintTextColor="@color/black"
+                        app:startIconDrawable="@drawable/customlove"
+                        app:startIconTint="@color/lovecolor">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/fname"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="text"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck">
+
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/segoeui"
+                        android:text="@string/PartnerName"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/secondname"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/PartnerName"
+                        android:textColorHint="@color/black"
+                        app:boxStrokeColor="@color/black"
+                        app:boxStrokeWidthFocused="2dp"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/black"
+                        app:hintTextColor="@color/black"
+                        app:startIconDrawable="@drawable/customlove"
+                        app:startIconTint="@color/lovecolor">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/sname"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="text"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck">
+
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <Button
+                        android:id="@+id/calculate"
+                        android:layout_width="250dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:backgroundTint="@color/ButtonColor"
+                        android:fontFamily="@font/elementalend"
+                        android:text="@string/ButtonText"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                    <Button
+                        android:onClick="reCalculate"
+                        android:visibility="invisible"
+                        android:id="@+id/again"
+                        android:layout_width="250dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="-70dp"
+                        android:backgroundTint="@color/buton1"
+                        android:fontFamily="@font/elementalend"
+                        android:text="@string/tryagain"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        tools:ignore="OnClick,UsingOnClickInXml" />
+
+                    <!--Results Part-->
+                    <TextView
+                        android:id="@+id/headingCongra"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="0dp"
+                        android:fontFamily="@font/elementalend"
+                        android:text="@string/CongraText"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/fnameTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/segoeui"
+                        android:text="@string/CongraText"
+                        android:textAlignment="center"
+                        android:textColor="@color/ButtonColor"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/heart"
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@string/ContentDesc"
+                        android:src="@drawable/customlove"
+                        android:visibility="invisible"
+                        tools:ignore="HardcodedText,ImageContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/snameTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoeui"
+                        android:text="@string/CongraText"
+                        android:textAlignment="center"
+                        android:textColor="@color/ButtonColor"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+
+                    <TextView
+                        android:id="@+id/result"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/buton2"
+                        android:fontFamily="@font/segoeui"
+                        android:padding="10dp"
+                        android:text="@string/result"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:visibility="invisible"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="MissingConstraints">
+
+
+                    <TextView
+                        android:id="@+id/percentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="435dp"
+                        android:fontFamily="@font/elementalend"
+                        android:text="@string/percent"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:visibility="invisible"/>
+
+
+                </RelativeLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </ScrollView>
+        <!--Google Ads Layout-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/AdsUnit_HomeID" />
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

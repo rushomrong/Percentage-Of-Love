@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeveloperInfo"
+    android:background="@color/ButtonColor"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!--Main Content View-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/backPressed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="TODO"
+                android:padding="15dp"
+                android:src="@drawable/back_arrow"
+                tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@+id/backPressed"
+                android:gravity="center_vertical"
+                android:text="@string/dev_title"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--IMG 1-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/round_bk5">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="25dp"
+                            android:text="@string/dev_title"
+                            android:textColor="@color/white"
+                            android:textSize="26sp" />
+
+
+                    </RelativeLayout>
+
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="-10dp"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/dev" />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:justificationMode="inter_word"
+                        android:text="@string/dev_desc"
+                        android:textColor="#212121"
+                        android:textSize="18sp"
+                        tools:targetApi="o" />
+
+
+                    <!--Developer Details-->
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="15dp"
+                        >
+
+                        <TableRow android:background="#00000000">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="4"
+                                android:padding="10dp"
+                                android:text="@string/developer_Title"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="4"
+                                android:padding="10dp"
+                                android:text="@string/developer_Name"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                        </TableRow>
+
+                        <TableRow android:background="#00000000">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="4"
+                                android:padding="10dp"
+                                android:text="@string/developer_edu"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="4"
+                                android:padding="10dp"
+                                android:text="@string/developer_sub"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </TableRow>
+
+                        <TableRow android:background="#00000000">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="4"
+                                android:padding="10dp"
+                                android:text="@string/developer_mail"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="4"
+                                android:padding="10dp"
+                                android:text="@string/developer_email"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"/>
+                        </TableRow>
+
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <!--Google Ads Layout-->
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/AdsUnit_ID2" />
+
+</RelativeLayout>

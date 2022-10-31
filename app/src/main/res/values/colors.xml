@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#F25555</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+
+    <!--Custom Resources-->
+    <color name="textHitColor">#616161</color>
+    <color name="ButtonColor">#F25555</color>
+    <color name="HintBG">#E9DCDC</color>
+    <color name="CircleColor">#E9BFBF</color>
+    <color name="OutlineColor">#767575</color>
+    <color name="buton1">#3ADED8</color>
+    <color name="buton2">#80FFBB</color>
+    <color name="lovecolor">#D80027</color>
+    <color name="YellowColor">#F4B400</color>
+    <color name="GreenColor">#0F9D58</color>
+    <color name="RedColor">#DB4437</color>
+    <color name="BlueColor">#4285F4</color>
+</resources>

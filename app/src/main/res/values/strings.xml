@@ -1,0 +1,114 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Percentage Of Love</string>
+    <string name="logoname">Connection</string>
+    <string name="DevelopedBy">Developed by Rusho</string>
+    <string name="IMGText">logo</string>
+    <string name="YourName">Your Name</string>
+    <string name="PartnerName">Partner Name</string>
+    <string name="ButtonText">Submit</string>
+    <string name="CongraText">Congratulation</string>
+    <string name="ContentDesc">plus</string>
+    <string name="reConnection">Try Again</string>
+    <string name="share">Share This</string>
+    <string name="result">resulthere</string>
+    <string name="percent">%</string>
+    <string name="tryagain">Try Again</string>
+    <string name="loadText">loading</string>
+    <string name="ThankU">LOVE YOUR \nPARTNER FOREVER</string>
+
+
+    <string name="logo_name">Percentage \n Of Love</string>
+
+
+    <!--Onboarding Screen Details-->
+    <string name="heading_one">Hermann Hesse - Says</string>
+    <string name="heading_two">Ben Folds - Says</string>
+    <string name="heading_three">Elaine Davis - Says</string>
+    <string name="heading_four">Unknown - Says</string>
+
+
+    <!--Drawer Menu-->
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <!--Drawer Menu-->
+
+
+    <!--Onboarding Screen Dedescription-->
+
+    <string name="desc_one">If I know what love is,\nit is because of you.</string>
+    <string name="desc_two">I love you more than I \nhave ever found a way to say to you.</string>
+    <string name="desc_three">Loved you yesterday, \nlove you still always have always will</string>
+    <string name="desc_four">I need you like a heart needs a beat.</string>
+
+
+    <!--Rusho Mrong Google Admob Publishers ID-->
+    <string name="Admob_ID">ca-app-pub-3130495670229257~3329890241</string>
+    <string name="AdsUnit_HomeID">ca-app-pub-3130495670229257/2383640088</string>
+    <string name="AdsUnit_ID2">ca-app-pub-3130495670229257/2756897371</string>
+    <string name="AdsUnit_Interstitial">ca-app-pub-3130495670229257/3878407358</string>
+    <string name="AdsUnit_MSGAd">ca-app-pub-3130495670229257/8848430910</string>
+    <string name="AdsUnit_MSGHAd">ca-app-pub-3130495670229257/2086994710</string>
+    <string name="AdsUnit_SKPNXTBTN">ca-app-pub-3130495670229257/5886284011</string>
+    <!--Google Admob Publishers ID-->
+
+
+    <!--Check Internet Text-->
+    <string name="CheckTitle">Connect to Internet</string>
+    <string name="CheckMsg">Please connect to the internet to proceed further</string>
+    <string name="CheckYesBtn">Connect</string>
+    <string name="CheckNoBtn">Cancel</string>
+
+    <!--Menu-->
+    <string name="nav_home">Home</string>
+    <string name="nav_info">Info</string>
+    <string name="nav_Developer">Developer Details</string>
+    <string name="nav_Sms">Get Messages</string>
+
+    <string name="info_title">App Info</string>
+    <string name="info_head">Percentage \nOf Love</string>
+    <string name="info_Desc">This app is developed for entertainment purpose only. Tried to build a pretty good app onBoarding screen for this, so that everyone can have a better experience with this app UI. I saw that, there has lots of Love Calculator over there in play store with different styles. This app is developed with only for the calculation of the love couple connection of the percentage of their love life.\n<br></br>\nI will be adding more things on this app in the near future. The apps features like - love quotes, - love messages will be add with some extra features soon.</string>
+    <string name="info_Desc2" tools:ignore="StringEscaping">\nLove does take over most of your brain activity, Brizendine says, and once it has you hooked, it does not let you go. It keeps your chemicals hopping, which is why you can not seem to get the other person out of your head.\n<br></br>\nBut all the scientists admit that there is no real hard explanation for why one person goes for another, as opposed to another one. There will probably never be a science of love, nor any way to calculate what the results will be. So let your mind and your heart decide.</string>
+    <string name="dev_title">Developer Details</string>
+    <string name="developer_Title">Developer Name</string>
+    <string name="developer_Name">Rusho Mrong</string>
+    <string name="developer_edu">Education</string>
+    <string name="developer_sub">M.S.S in Social Work</string>
+    <string name="developer_mail">Email</string>
+    <string name="developer_email">info@rushomrong.com</string>
+    <string name="dev_desc">Hi there, I am Front End-Web and Android Apps Developer | Shopify Ecommerce Expert. I am Professional Android App developer who can turn the Website of your Business, Company, or Product into a Responsive Android app. Technology is changing at very high pace and so to remain intact, we also have to adopt the same speed.\n<br></br>\nChange is hard but it is the only solution to keep you at top. So, everybody has to learn new things with the speed of changing technology.</string>
+
+    <string name="todo">TODO</string>
+
+    <!--Rapid Api Client-->
+    <string name="Rusho_RapidAPIClient">https://love-calculator.p.rapidapi.com/getPercentage?sname=</string>
+    <string name="RapidApi_Host">love-calculator.p.rapidapi.com</string>
+    <string name="Rusho_RapidApiKey">441be6ecc7mshf94acd9a06c7cfbp15c421jsnd9491e6e5312</string>
+
+    <string name="smsTitle">Search Terms: <strong>Love, quotes, friendship, Good night, Good morning, funny, Birthday, Sad, Sweet, Random.</strong></string>
+    <string name="smsHead">Get Free \nMessages</string>
+    <string name="smsHint">Search Category</string>
+    <string name="smsSearch">Search</string>
+    <string name="smsSample">Message Loading....</string>
+    <string name="smsNext">Next</string>
+    <string name="smsNavHead">Get Free Messages</string>
+    <string name="playStore_Link">https://play.google.com/store/apps/details?id=</string>
+
+
+    <string name="Rusho_SMSAPIClient">https://ajith-messages.p.rapidapi.com/getMsgs?category=</string>
+    <string name="Rusho_RapidSMSHost">ajith-messages.p.rapidapi.com</string>
+    <string name="Rusho_RapidSMSKey">441be6ecc7mshf94acd9a06c7cfbp15c421jsnd9491e6e5312</string>
+    <string name="title_activity_home_view">HomeView</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="Calculate">Calculate Love \nPercent</string>
+    <string name="GetSMS">Get Free \nMessages</string>
+    <string name="ShareApp">Share My App</string>
+    <string name="RateApp">Rate My App</string>
+    <string name="LuvNavTitle">Calculate Love Percent</string>
+
+
+</resources>

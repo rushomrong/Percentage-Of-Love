@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoveMessages"
+    android:background="@color/ButtonColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!--Main Content View-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/backPressed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="TODO"
+                android:padding="15dp"
+                android:src="@drawable/back_arrow"
+                tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@+id/backPressed"
+                android:gravity="center_vertical"
+                android:text="@string/smsNavHead"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/elementalend"
+                        android:text="@string/smsHead"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="26sp"
+                        android:textStyle="bold"
+                        android:paddingTop="20dp"
+                        />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/smsCate"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/smsHint"
+                        android:textColorHint="@color/black"
+                        app:boxStrokeColor="@color/black"
+                        app:boxStrokeWidthFocused="2dp"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/black"
+                        app:hintTextColor="@color/black"
+                        app:startIconDrawable="@drawable/search"
+                        app:startIconTint="@color/black"
+                        android:layout_marginTop="20dp"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/Category"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="text"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck">
+
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="@font/segoeui"
+                        android:text="@string/smsTitle"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+
+                    <Button
+                        android:id="@+id/searchNow"
+                        android:layout_width="250dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="25dp"
+                        android:backgroundTint="#00000000"
+                        android:fontFamily="@font/elementalend"
+                        android:text="@string/smsSearch"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:visibility="invisible"
+                        android:id="@+id/nextbtn"
+                        android:layout_width="250dp"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="-70dp"
+                        android:backgroundTint="#00000000"
+                        android:fontFamily="@font/elementalend"
+                        android:text="@string/smsNext"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold" />
+
+
+
+                    <ImageView
+                        android:id="@+id/shareResult"
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/share"
+                        app:tint="@color/black"
+                        android:layout_gravity="center_horizontal"
+                        android:visibility="invisible"
+                        android:contentDescription="TODO"
+                        tools:ignore="ContentDescription,HardcodedText" />
+
+
+                    <TextView
+                        android:id="@+id/Message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/smsSample"
+                        android:layout_gravity="center|center_horizontal"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:visibility="invisible"
+
+                        />
+
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/animationView"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="-50dp"
+                            android:gravity="start"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            app:lottie_rawRes="@raw/lovesms"
+                            tools:ignore="ImageContrastCheck"
+                            android:visibility="invisible"
+                            />
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <!--Google Ads Layout-->
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/AdsUnit_MSGHAd" />
+
+</RelativeLayout>
