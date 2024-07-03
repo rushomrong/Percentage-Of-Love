@@ -76,7 +76,6 @@ public class OnBoarding extends AppCompatActivity {
                 CheckInternet checkInternet = new CheckInternet();
                 if (!checkInternet.isConnected(this)) {
                     showCustomDialog();
-                    return;
                 } else {
                     if (mInterstitialAd !=null){
                         mInterstitialAd.show(OnBoarding.this);
@@ -109,7 +108,6 @@ public class OnBoarding extends AppCompatActivity {
             CheckInternet checkInternet = new CheckInternet();
             if (!checkInternet.isConnected(this)) {
                 showCustomDialog();
-                return;
             } else {
                 if (mInterstitialAd !=null){
                     mInterstitialAd.show(OnBoarding.this);
@@ -142,8 +140,10 @@ public class OnBoarding extends AppCompatActivity {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             setUpindicator(0);
+            viewPager.addOnPageChangeListener(viewlistener);
+        } else {
+            viewPager.addOnPageChangeListener(viewlistener);
         }
-        viewPager.addOnPageChangeListener(viewlistener);
 
 
     }
@@ -243,10 +243,8 @@ public class OnBoarding extends AppCompatActivity {
 
             setUpindicator(position);
 
-            if (position > 0) {
-
-                backbtn.setVisibility(View.VISIBLE);
-            } else {
+            if (position > 0) backbtn.setVisibility(View.VISIBLE);
+            else {
 
                 backbtn.setVisibility(View.INVISIBLE);
             }

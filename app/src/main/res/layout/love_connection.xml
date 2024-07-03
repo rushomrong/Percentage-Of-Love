@@ -36,7 +36,7 @@
                 android:layout_toEndOf="@+id/backPressed"
                 android:gravity="center_vertical"
                 android:text="@string/LuvNavTitle"
-                android:textColor="#ffffff"
+                android:textColor="#fff"
                 android:textSize="17sp"
                 android:textStyle="bold" />
         </RelativeLayout>

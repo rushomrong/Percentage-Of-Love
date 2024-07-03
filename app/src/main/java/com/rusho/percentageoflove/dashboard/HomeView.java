@@ -22,13 +22,14 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.android.play.core.review.ReviewInfo;
 import com.google.android.play.core.review.ReviewManager;
 import com.google.android.play.core.review.ReviewManagerFactory;
-import com.google.android.play.core.tasks.Task;
+import com.google.android.gms.tasks.Task;
 import com.rusho.percentageoflove.AppInfo;
 import com.rusho.percentageoflove.DeveloperInfo;
 import com.rusho.percentageoflove.LoveConnection;
 import com.rusho.percentageoflove.LoveMessages;
 import com.rusho.percentageoflove.R;
 
+/** @noinspection ALL*/
 public class HomeView extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     DrawerLayout drawerLayout;
@@ -159,25 +160,31 @@ public class HomeView extends AppCompatActivity implements NavigationView.OnNavi
             case R.id.nav_share:
                 /*Share the app to the others*/
 
-                Intent sharingIntent = new Intent(Intent.ACTION_SEND);
-
-                // type of the content to be shared
-                sharingIntent.setType("text/plain");
-
-                // subject of the content. you can share anything
-                String shareSubject = "Download it now! Check your love percentage with this app";
-
-                // passing body of the content
-                sharingIntent.putExtra(Intent.EXTRA_TEXT, "Hey check out my app at: https://play.google.com/store/apps/details?id=" + getApplication().getPackageName());
-
-                // passing subject of the content
-                sharingIntent.putExtra(Intent.EXTRA_SUBJECT, shareSubject);
+                Intent sharingIntent = getSharingIntent();
                 startActivity(Intent.createChooser(sharingIntent, "Share using"));
 
                 break;
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @NonNull
+    private Intent getSharingIntent() {
+        Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+
+        // type of the content to be shared
+        sharingIntent.setType("text/plain");
+
+        // subject of the content. you can share anything
+        String shareSubject = "Download it now! Check your love percentage with this app";
+
+        // passing body of the content
+        sharingIntent.putExtra(Intent.EXTRA_TEXT, "Hey check out my app at: https://play.google.com/store/apps/details?id=" + getApplication().getPackageName());
+
+        // passing subject of the content
+        sharingIntent.putExtra(Intent.EXTRA_SUBJECT, shareSubject);
+        return sharingIntent;
     }
 
     private static final int TIME_INTERVAL = 2000; // # milliseconds, desired time passed between two back presses.
@@ -197,19 +204,7 @@ public class HomeView extends AppCompatActivity implements NavigationView.OnNavi
 
     public void ShareApp(View view) {
 
-        Intent sharingIntent = new Intent(Intent.ACTION_SEND);
-
-        // type of the content to be shared
-        sharingIntent.setType("text/plain");
-
-        // subject of the content. you can share anything
-        String shareSubject = "Download it now! Check your love percentage with this app";
-
-        // passing body of the content
-        sharingIntent.putExtra(Intent.EXTRA_TEXT, "Hey check out my app at: https://play.google.com/store/apps/details?id=" + getApplication().getPackageName());
-
-        // passing subject of the content
-        sharingIntent.putExtra(Intent.EXTRA_SUBJECT, shareSubject);
+        Intent sharingIntent = getSharingIntent();
         startActivity(Intent.createChooser(sharingIntent, "Share using"));
     }
 }

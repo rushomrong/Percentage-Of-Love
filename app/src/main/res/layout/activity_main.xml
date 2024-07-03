@@ -20,7 +20,7 @@
         android:src="@drawable/flogo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ImageContrastCheck,MissingConstraints" />
+        tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck,MissingConstraints" />
 
 
     <ImageView
@@ -30,7 +30,7 @@
         android:contentDescription="TODO"
         android:scaleType="centerCrop"
         android:src="@drawable/newlove"
-        tools:ignore="ImageContrastCheck,MissingConstraints"
+        tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck,MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="34dp" />
 

@@ -12,6 +12,7 @@ import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 import com.rusho.percentageoflove.dashboard.HomeView;
 
+/** @noinspection ALL */
 public class AppInfo extends AppCompatActivity {
 
     ImageView backPressed;

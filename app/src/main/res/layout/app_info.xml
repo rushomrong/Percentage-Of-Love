@@ -35,7 +35,7 @@
                 android:layout_toEndOf="@+id/backPressed"
                 android:gravity="center_vertical"
                 android:text="@string/info_title"
-                android:textColor="#ffffff"
+                android:textColor="@color/white"
                 android:textSize="17sp"
                 android:textStyle="bold" />
 
